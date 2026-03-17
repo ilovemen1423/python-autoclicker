@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Python Auto Clicker</title>
+
+<style>
+
+body{
+margin:0;
+font-family:Segoe UI;
+background:linear-gradient(270deg,#0f2027,#203a43,#2c5364);
+background-size:600% 600%;
+animation:bgmove 12s ease infinite;
+color:white;
+text-align:center;
+}
+
+@keyframes bgmove{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{
+margin-top:100px;
+}
+
+.title{
+font-size:60px;
+font-weight:bold;
+animation:glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow{
+from{ text-shadow:0 0 10px #00eaff;}
+to{ text-shadow:0 0 25px #00eaff;}
+}
+
+.subtitle{
+font-size:20px;
+opacity:0.8;
+margin-bottom:40px;
+}
+
+.download{
+padding:18px 40px;
+font-size:20px;
+background:#00eaff;
+border:none;
+border-radius:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.download:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #00eaff;
+}
+
+.features{
+margin-top:80px;
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+}
+
+.card{
+background:rgba(255,255,255,0.05);
+padding:25px;
+border-radius:12px;
+width:220px;
+backdrop-filter:blur(6px);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+background:rgba(255,255,255,0.12);
+}
+
+footer{
+margin-top:120px;
+opacity:0.6;
+font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="title">Auto Clicker</div>
+
+<div class="subtitle">
+Fast Python autoclicker with keyboard and mouse keybinds
+</div>
+
+<a href="autoclicker.py" download>
+<button class="download">Download</button>
+</a>
+
+</div>
+
+<div class="features">
+
+<div class="card">
+<h3>⚡ Fast</h3>
+<p>Supports high CPS clicking with smooth performance</p>
+</div>
+
+<div class="card">
+<h3>🖱 Mouse Buttons</h3>
+<p>Works with side mouse buttons and keyboard keys</p>
+</div>
+
+<div class="card">
+<h3>🎮 Simple UI</h3>
+<p>Easy to configure CPS and toggle keybinds</p>
+</div>
+
+<div class="card">
+<h3>🔒 Safe Toggle</h3>
+<p>Turn off the autoclicker anytime while typing</p>
+</div>
+
+</div>
+
+<footer>
+Made with Python • Hosted on GitHub
+</footer>
+
+</body>
+</html>  
